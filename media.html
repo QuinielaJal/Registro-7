@@ -102,13 +102,13 @@
     </div>
 
     <!-- Controles -->
-    <div class="controles row g-0 d-flex px-1">
+    <div class="controles row g-0 d-flex">
 
-        <div class="col-8 p-1">
+        <div class="col-8 p-1" style="position:relative">
+            <div id="nombretext">Nombre</div>
             <div id="nombrebox">
                 <div class="row g-0">
                     <div class="col-11">
-                        <div id="nombretext"> &nbsp Nombre</div>
                         <input id="nombre" type="text" placeholder="" maxlength="20" spellcheck="false" autocomplete="off">
                     </div>
                     <div class="col-1 d-flex align-items-end">
@@ -125,8 +125,11 @@
         </div>
 
         <div class="col-4 p-1">
-            <h2 id="botonagregar" class="boton" onclick="save()">AGREGAR <ion-icon name="add-outline" style="font-size:20px;"></ion-icon></h2>
-            <div id="touchIconDiv2"><i class="material-icons" id="touchIcon2">touch_app</i></div>
+            <h2 id="botonagregar" class="boton" onclick="save()">
+                <div id="touchIconDiv2"><i class="material-icons" id="touchIcon2">touch_app</i></div>
+                AGREGAR <ion-icon name="add-outline" style="font-size:20px;"></ion-icon>
+            </h2>
+            
         </div>
 
         <div class="col-4 p-1">
@@ -144,7 +147,7 @@
             </label>
         </div>
 
-    </div>
+    </div>  
 
     <br>
 

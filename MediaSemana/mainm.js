@@ -88,7 +88,7 @@ function start(){
     document.getElementById("total").innerHTML = "Total: $" + quantity*pricem +"\n";
     }
     else{
-        document.getElementById("botonenviar").style.filter = "grayscale(1)";
+        document.getElementById("botonenviar").style.filter = "grayscale(0.6)";
     }
 }
 
@@ -217,7 +217,7 @@ function number(){              //Actualiza el número del boton "Enviar"
     localStorage.setItem(aliasStorage, name);
 
     if (quantity == "" || !quantity || quantity == 0 || quantity == "0")
-        document.getElementById("imgwsp").style.filter = "grayscale(1)";
+        document.getElementById("imgwsp").style.filter = "grayscale(0.6)";
     else
         document.getElementById("botonenviar").style.filter = "none";
 }
@@ -322,7 +322,7 @@ function calculate(){
         quantity = localStorage.getItem(quantStorage);}
     document.querySelector('#botonenviar span').textContent = quantity;
     if (quantity == "" || !quantity || quantity == 0 || quantity == "0")
-        document.getElementById("imgwsp").style.filter = "grayscale(1)";
+        document.getElementById("imgwsp").style.filter = "grayscale(0.6)";
     else
         document.getElementById("botonenviar").style.filter = "none";
     localStorage.setItem(aliasStorage, name);
@@ -393,7 +393,7 @@ function remove(e){
     document.getElementById("total").innerHTML = "Total: $" + quantity*pricem +"\n";
 
     if (!quantity){
-        document.getElementById("botonenviar").style.filter = "grayscale(1)";
+        document.getElementById("botonenviar").style.filter = "grayscale(0.6)";
     }
 
     if ((!quantity || quantity == 0) && !res.includes("_"))
