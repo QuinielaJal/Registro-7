@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="MediaSemana/stylesmSusp.css">
+    <link rel="stylesheet" href="https://quinielajal.github.io/Registro-1/MediaSemana/stylesmSusp.css">
     <link rel="icon" href="MediaSemana/iconm.jpg">
     <link rel="apple-touch-icon" href="MediaSemana/iconm.jpg">
     <link rel="shortcut icon" href="MediaSemana/iconm.jpg" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-    <script src="MediaSemana/mainm.js"></script>
+    <script src="https://quinielajal.github.io/Registro-1/MediaSemana/mainm.js"></script>
     <script src="https://quinielajal.github.io/Registro-1/var.js"></script>
     <script src="var.js"></script>
 </head>
@@ -121,15 +121,20 @@
         </div>
 
         <div class="col-4 p-1">
-            <h2 id="botonenviar" class="boton" onclick="send()"> ENVIAR <span>0</span>&nbsp <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-5.png" height="20px" id="imgwsp"></ion-icon></h2>
-        </div>
-
-        <div class="col-4 p-1">
             <h2 id="botonagregar" class="boton" onclick="save()">
                 <div id="touchIconDiv2"><i class="material-icons" id="touchIcon2">touch_app</i></div>
                 AGREGAR <ion-icon name="add-outline" style="font-size:20px;"></ion-icon>
             </h2>
-            
+        </div>
+
+        <div class="col-4 p-1">
+            <h2 id="botonenviar" class="boton" onclick="send()"> ENVIAR <span>0</span>&nbsp <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-5.png" height="20px" id="imgwsp"></ion-icon></h2>
+        </div>
+
+        <div class="col-4 p-1"> 
+            <label id="botonborrar" class="boton" onclick="deleteall()">
+                BORRAR TODO<ion-icon name="trash-outline" id="trash" style="font-size:medium"></ion-icon>
+            </label>
         </div>
 
         <div class="col-4 p-1">
@@ -141,11 +146,6 @@
             </label>
         </div>
 
-        <div class="col-4 p-1"> 
-            <label id="botonborrar" class="boton" onclick="deleteall()">
-                BORRAR TODO<ion-icon name="trash-outline" id="trash" style="font-size:medium"></ion-icon>
-            </label>
-        </div>
 
     </div>  
 
