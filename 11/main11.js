@@ -5,7 +5,7 @@ var aliasStorage = "alias";
 var price = 25;
 //var tel = "5213317816346";
 //var suspIndex = 1;
-var nPartidos = 11;
+var nPartidos = 10;
 
 var quantity = localStorage.getItem(quantStorage);
 var name = localStorage.getItem(aliasStorage);
