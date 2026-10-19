@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="https://quinielajal.github.io/Registro-1/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="https://quinielajal.github.io/Registro-1/11/styles11.css?v=1.0.5">
+    <link rel="stylesheet" href="https://quinielajal.github.io/Registro-1/11/styles11.css?v=1.0.6">
+    <link rel="stylesheet" href="https://quinielajal.github.io/Registro-1/pagos.css?v=1.0.0">
     <link rel="icon" href="https://quinielajal.github.io/Registro-1/icon.jpg">
     <link rel="apple-touch-icon" href="https://quinielajal.github.io/Registro-1/icon.jpg">
     <link rel="shortcut icon" href="https://quinielajal.github.io/Registro-1/icon.jpg" type="image/x-icon">
@@ -19,7 +20,8 @@
     <script src="https://js.sentry-cdn.com/dd4a3e2df576b29604a973a4602b5948.min.js" crossorigin="anonymous" async></script>
     <script src="https://quinielajal.github.io/Registro-1/whatsapp-utils.js?v=1.0.1" crossorigin="anonymous" defer></script>
     <script src="https://quinielajal.github.io/Registro-1/11/main11.js?v=1.0.7" crossorigin="anonymous" defer></script>
-    <script src="https://quinielajal.github.io/Registro-1/var.js?v=1.0.6" crossorigin="anonymous" defer></script>
+    <script src="https://quinielajal.github.io/Registro-1/var.js?v=1.0.7" crossorigin="anonymous" defer></script>
+    <script src="https://quinielajal.github.io/Registro-1/pagos.js?v=1.0.0" crossorigin="anonymous" defer></script>
     <!-- <script src="https://quinielajal.github.io/Registro-1/lights.js" crossorigin="anonymous"></script> -->
     <!-- <script src='./snow.js' defer></script> -->
 </head>
@@ -165,7 +167,7 @@
 
         <div class="col-6 p-1">
             <label id="random" class="boton" onclick="random()">
-                AL AZAR
+                LLENAR AL AZAR
             </label>
             <label id="checkcombinaciones" class="boton allowcomb" onclick="allowcombination()">
                 DOBLES Y TRIPLES
@@ -174,20 +176,16 @@
 
 
     </div>  
-    <br>
-
     <!-- Lista -->
-    <div>
-        <span id="costo">Costo: <span id="costoSpan">$0</span></span>
-        <span id="total">Total: $0</span><br>
+    <!-- Costo y Quiniela(s) | botón "Cuentas para pagar" (lo llena pagos.js con las cuentas del vendedor de var.js) | Total -->
+    <div class="pg-fila">
+        <div class="pg-izq">
+            <span id="costo">Costo: <span id="costoSpan">$0</span></span>
+            <span id="numquinielas">0 Quiniela(s)</span>
+        </div>
+        <section id="pagos" data-tipo="fin" hidden></section>
+        <span id="total">Total: $0</span>
     </div>
-
-    <div>
-        <span id="numquinielas">0 Quiniela(s)</span>
-    </div>
-
-    <br>
-
     <div id="listaContainer" translate="no">
         <table id="lista">
         </table>
